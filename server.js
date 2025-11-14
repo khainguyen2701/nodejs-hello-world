@@ -22,7 +22,7 @@ app.use(express.json());
 
 // Route mẫu
 app.get("/", (req, res) => {
-  res.send("🚀 Hello from Node.js server!");
+  res.send(`🚀 Hello from Node.js server! PORT: ${PORT}`);
 });
 
 app.get("/api/user", async (req, res) => {
